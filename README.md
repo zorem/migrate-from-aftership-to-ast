@@ -1,6 +1,6 @@
 # Migrate tracking numbers from AfterShip to AST  
 
-This plugin will migrate tracking information from the AfterShip WooCommerce plguin to the Advanced Shipment tracking plguin meta fields.
+This plugin will migrate tracking information from the [AfterShip plguin for WooCommerce](https://wordpress.org/plugins/aftership-woocommerce-tracking/) into the [Advanced Shipment tracking plugin](https://wordpress.org/plugins/woo-advanced-shipment-tracking/) meta fields.
 
 Once installed, navigate to WooCommerce > Migrate from Aftership to AST and you'll be able to choose the number of days to go back in orders and run the migration and click "Migrate".
 
