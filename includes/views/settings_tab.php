@@ -10,7 +10,7 @@
 			<table class="form-table heading-table">
 				<tbody>
 					<tr>
-						<td>
+						<td style="width: 80%;">
 							<label><?php esc_html_e( 'Migrate tracking numbers from AfterShip to AST for the last', 'migrate-from-aftership-to-ast' ); ?>
 							<input type="number" min='1' value="30" name="migration_data_duration" class="migration_data_duration">	
 							<?php esc_html_e( 'days', 'migrate-from-aftership-to-ast' ); ?>
