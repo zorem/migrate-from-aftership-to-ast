@@ -2,6 +2,8 @@
 
 This plugin will migrate tracking information from the AfterShip WooCommerce plguin to the Advanced Shipment tracking plguin meta fields.
 
+Once installed, navigate to WooCommerce > Migrate from Aftership to AST and you'll be able to choose the number of days to go back in orders and run the migration and click "Migrate".
+
 ## Installation
 
 To install:
@@ -14,7 +16,7 @@ To install:
 
 ### Map the Shipping provider names
 
-You can use this code snippet in functions.php to maop the shipping provider names in case the shipping provider name on AfterShip does not match the name of the provider on the AST shipping providers list.
+You can use this code snippet in functions.php to map the shipping provider names in case the shipping provider name on AfterShip does not match the name of the provider on the AST shipping providers list.
 
 // The filter callback function.
 function mfata_tracking_provider( $provider ) {
