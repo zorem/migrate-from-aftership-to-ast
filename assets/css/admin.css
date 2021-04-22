@@ -1,0 +1,97 @@
+.woocommerce_page_migrate-from-aftership-to-ast #wpbody-content {
+    padding-bottom: 40px;
+}
+.woocommerce_page_migrate-from-aftership-to-ast #wpcontent {
+    padding-left: 0;
+}
+.zorem-layout-mfata__header {
+	background: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    z-index: 1001;
+    align-items: center;
+    position: relative;
+}
+.zorem-layout-mfata__header .zorem-layout-mfata__header-breadcrumbs {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 0 0 30px;
+    margin: 0;
+    flex: 1 auto;
+    line-height: 60px;
+    height: 60px;
+}
+.tab_inner_container {
+    max-width: 930px;
+    margin: 0 auto;
+    display: block;
+	vertical-align: top;
+	padding: 0;
+}
+.outer_form_table {
+    border: 1px solid #e0e0e0;
+    margin-top: 25px;
+    border-radius: 3px;
+    background: #fff;
+    padding: 10px 15px 10px;
+    position: relative;
+}
+.woocommerce table.form-table input[type=number].migration_data_duration{
+	margin-right: 5px;
+	width: 60px;    
+    vertical-align: middle;
+}
+.spinner.active {
+    visibility: visible;
+}
+.zorem-layout .spinner {
+    float: none;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+   from {bottom: 0; opacity: 0;}
+   to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+   from {bottom: 0; opacity: 0;}
+   to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+   from {bottom: 30px; opacity: 1;}
+   to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+   from {bottom: 30px; opacity: 1;}
+   to {bottom: 0; opacity: 0;}
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+.mfata_snackbar {
+   visibility: hidden; /* Hidden by default. Visible on click */
+   min-width: 250px; /* Set a default minimum width */
+   margin-left: -125px; /* Divide value of min-width by 2 */
+   background-color: #005b9a; /* Black background color */
+   color: #fff; /* White text color */
+   text-align: center; /* Centered text */
+   border-radius: 2px; /* Rounded borders */
+   padding: 16px; /* Padding */
+   position: fixed; /* Sit on top of the screen */
+   z-index: 1; /* Add a z-index if needed */
+   left: 50%; /* Center the snackbar */
+   bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+.show_snackbar {
+   visibility: visible !important; /* Show the snackbar */
+-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
