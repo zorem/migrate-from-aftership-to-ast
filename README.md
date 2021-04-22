@@ -21,11 +21,15 @@ You can use this code snippet in functions.php to map the shipping provider name
 // The filter callback function.
 
 function mfata_tracking_provider( $provider ) {  
-    if ( 'usps-webhook' == $provider ) {  //Provider name on AfterShip 
-		return 'usps';  //Provider name on AST
+   //Provider name on AfterShip 
+   if ( 'usps-webhook' == $provider ) {  
+   //Provider name on AST
+		return 'usps';  
 	}
-	if ( 'usps-api' == $provider ) { //Provider name on AfterShip
-		return 'usps';  //Provider name on AST
+	if ( 'usps-api' == $provider ) { 
+	//Provider name on AfterShip
+		return 'usps';  
+		//Provider name on AST
 	}
     return $provider;
 }
