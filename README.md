@@ -18,8 +18,7 @@ To install:
 
 You can use this code snippet in functions.php to map the shipping provider names in case the shipping provider name on AfterShip does not match the name of the provider on the AST shipping providers list.
 
-// The filter callback function.
-
+```bash
 function mfata_tracking_provider( $provider ) {  
    //Provider name on AfterShip 
    if ( 'usps-webhook' == $provider ) {  
@@ -34,3 +33,4 @@ function mfata_tracking_provider( $provider ) {
     return $provider;
 }
 add_filter( 'mfata_tracking_provider', 'mfata_tracking_provider' );
+```
